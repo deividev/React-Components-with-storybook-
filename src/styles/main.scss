@@ -1,0 +1,99 @@
+
+//Abstracts
+@use './abstract/mixins';
+
+html,
+ body {
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ }
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.app_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+ *, *::before, *::after {box-sizing: border-box;}
+
+ * {
+   border: 0; 
+   margin: 0; 
+   padding: 0;
+ }
+
+ li {list-style:none;}
+
+ a {
+   color: inherit;
+   text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+
+ button {background: none;}
+
+ :root {
+    //colors
+    --primary: #27ae60;
+    --secondary: #19242D;
+    --terciary: #2776ae;
+    --white: #ffffff;
+    --grey: #E1E1E1;
+    --black: #0a0a0a;
+
+    //Pruebas colores con juanki
+    //negro fondos => #0a0e11
+
+    --primary-hover: #579a30;
+
+    --success: #256401;
+    --error: #c72424;
+
+    //font
+    --font-color-ligth: #D1D5DB;
+    --font-color-medium: #4b4b4b;
+    --font-color-dark: #171717;
+
+
+    --font-base: 'Barriecito';
+    --font-size: 1rem;
+
+    // nav-link
+    --nav-link-color: var(--font-color-ligth);
+    --nav-link-hover-color: var(--primary);
+    --nav-link-font-size: 1.25rem;
+    --nav-link-margin: 0 15px 5px 0;
+
+    //btn
+    --btn-font-size: 1.25rem;
+    --btn-border-r: 5px;
+    --btn-padding: 5px 8px;
+    --btn-min-width: 100px;
+
+    // btn-primary
+    --btn-primary-color: var(--font-color-ligth);
+    --btn-primary-hover-color: var(--primary);
+    --btn-primary-border: 1px solid var(--primary);
+
+     // btn-primary
+     --btn-secondary-color: var(--black);
+     --btn-secondary-background-color: var(--primary);
+     --btn-secondary-hover-background: var(--primary-hover);
+     --btn-secondary-hover-color: var(--font-color-ligth);
+     --btn-secondary-hover-border: 1px solid var(--font-color-ligth);
+     --btn-secondary-border: 1px solid var(--black);
+ }
