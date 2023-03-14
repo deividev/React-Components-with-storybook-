@@ -9,33 +9,33 @@ Antes de comenzar a utilizar este proyecto, asegúrese de tener instalado Node.j
 ## Instalación
 
 Para instalar las dependencias del proyecto, ejecute el siguiente comando en la raíz del proyecto:
-    yarn install
+    ```yarn install```
 
 ## Ejecución
 
 Para ejecutar la aplicación, ejecute el siguiente comando:
-   yarn dev
+   ```yarn dev```
 
 Esto iniciará el servidor de desarrollo en http://localhost:3000.
 
 ## Compilación
 
 Para compilar la aplicación, ejecute el siguiente comando:
-    yarn build
+    ```yarn build```
 
 Esto generará una carpeta `dist` con los archivos compilados listos para ser desplegados en producción.
 
 ## Storybook
 
 Para ejecutar Storybook, ejecute el siguiente comando:
-    yarn storybook
+    ```yarn storybook``` 
 
 Esto iniciará el servidor de Storybook en http://localhost:6006.
 
 ## Jest
 
 Para ejecutar las pruebas unitarias con Jest, ejecute el siguiente comando:
-    yarn test
+    ```yarn test``` 
 
 ## Tecnologías utilizadas
 
