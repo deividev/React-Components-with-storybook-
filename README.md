@@ -1,81 +1,92 @@
-Vite + React + TypeScript + Sass + Storybook + Jest Project
-This project is a template for creating web applications using Vite, React, TypeScript, Sass, Storybook, and Jest.
+# Proyecto Vite + React + TypeScript + Sass + Storybook + Jest
 
-Requirements
-Before starting to use this project, make sure you have Node.js installed on your machine.
+Este proyecto es una plantilla para crear aplicaciones web utilizando Vite, React, TypeScript, Sass, Storybook y Jest.
 
-Installation
-To install the project dependencies, run the following command at the root of the project:
-yarn install
+## Requisitos
 
-Execution
-To run the application, run the following command:
-yarn dev
+Antes de comenzar a utilizar este proyecto, asegúrese de tener instalado Node.js en su máquina.
 
-This will start the development server at http://localhost:3000.
+## Instalación
 
-Compilation
-To compile the application, run the following command:
-yarn build
+Para instalar las dependencias del proyecto, ejecute el siguiente comando en la raíz del proyecto:
+    yarn install
 
-This will generate a dist folder with the compiled files ready to be deployed to production.
+## Ejecución
 
-Storybook
-To run Storybook, run the following command:
-yarn storybook
+Para ejecutar la aplicación, ejecute el siguiente comando:
+   yarn dev
 
-This will start the Storybook server at http://localhost:6006.
+Esto iniciará el servidor de desarrollo en http://localhost:3000.
 
-Jest
-To run unit tests with Jest, run the following command:
-yarn test
+## Compilación
 
-Technologies used
-Vite
-React
-TypeScript
-Sass
-Storybook
-Jest
-File structure
-lua
-Copy code
-|-- src
-| |--styles
-| | |--abstract
-| | |--base
-| | |--components
-| | |--config
-| | |--layout
-| | |--theme
-| | |--variables
-| | |--mains.scss
-| |-- components
-| | |-- Component.tsx
-| | |-- __test__
-| | | |--Component.test.tsx
-| | |-- Component.module.scss
-|-- .storybook
-| |-- main.tsx
-|-- vite.config.ts
-|-- package.json
-|-- tsconfig.json
-|-- jest.config.js
-|-- README.md
+Para compilar la aplicación, ejecute el siguiente comando:
+    yarn build
 
+Esto generará una carpeta `dist` con los archivos compilados listos para ser desplegados en producción.
 
-src/components: Folder where the application components are located.
-src/styles: Folder where the application styles are located.
-src/main.tsx: Entry point of the application.
-.storybook/main.js: Main configuration of Storybook.
-.storybook/preview.js: Configuration of the Storybook environment.
-vite.config.ts: Vite configuration.
-package.json: npm configuration file.
-tsconfig.json: TypeScript configuration.
-jest.config.js: Jest configuration.
-README.md: The file you are currently reading.
-Contributing
-If you would like to contribute to this project, you can do so through Pull Requests or Issues on GitHub.
+## Storybook
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+Para ejecutar Storybook, ejecute el siguiente comando:
+    yarn storybook
+
+Esto iniciará el servidor de Storybook en http://localhost:6006.
+
+## Jest
+
+Para ejecutar las pruebas unitarias con Jest, ejecute el siguiente comando:
+    yarn test
+
+## Tecnologías utilizadas
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/)
+
+## Estructura de archivos
+
+    |-- src
+    | |--styles
+    | | |--abstract
+    | | |--base
+    | | |--components
+    | | |--config
+    | | |--layout
+    | | |--theme
+    | | |--variables
+    | | |--mains.scss
+    | |-- components
+    | | |-- Componente.tsx
+    | | |-- __test__
+    | | | |--Componente.test.tsx
+    | | |-- Componente.module.scss
+    | |-- index.tsx
+    |-- .storybook
+    | |-- main.tsx
+    |-- vite.config.ts
+    |-- package.json
+    |-- tsconfig.json
+    |-- jest.config.js
+    |-- README.md
+
+- `src/components`: Carpeta donde se encuentran los componentes de la aplicación.
+- `src/styles`: Carpeta donde se encuentran los stilos de la aplicación.
+- `src/main.tsx`: Punto de entrada de la aplicación.
+- `.storybook/main.js`: Configuración principal de Storybook.
+- `.storybook/preview.js`: Configuración del entorno de Storybook.
+- `vite.config.ts`: Configuración de Vite.
+- `package.json`: Archivo de configuración de npm.
+- `tsconfig.json`: Configuración de TypeScript.
+- `jest.config.js`: Configuración de Jest.
+- `README.md`: Archivo que estás leyendo en este momento.
+
+## Contribuyendo
+
+Si desea contribuir a este proyecto, puede hacerlo a través de Pull Requests o Issues en GitHub.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo LICENSE para obtener más información.
