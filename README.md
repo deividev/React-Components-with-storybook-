@@ -60,9 +60,9 @@ Para ejecutar las pruebas unitarias con Jest, ejecute el siguiente comando:
     | | |--mains.scss
     | |-- components
     | | |-- Componente.tsx
+    | | |-- Componente.module.scss
     | | |-- __test__
     | | | |--Componente.test.tsx
-    | | |-- Componente.module.scss
     | |-- index.tsx
     |-- .storybook
     | |-- main.tsx
