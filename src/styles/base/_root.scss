@@ -9,7 +9,7 @@
     }
   
     @each $screen-size, $font-sizes in $type-scale {
-      @if $screen-size == small {
+      @if $screen-size == large {
         @each $size, $value in $font-sizes {
           --fs-#{$size}: #{$value};
         }
