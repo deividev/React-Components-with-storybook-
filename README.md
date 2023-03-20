@@ -56,7 +56,6 @@ Para ejecutar las pruebas unitarias con Jest, ejecute el siguiente comando:
     | | |--config
     | | |--layout
     | | |--theme
-    | | |--variables
     | | |--mains.scss
     | |-- components
     | | |-- Componente.tsx
