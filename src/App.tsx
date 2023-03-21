@@ -1,56 +1,57 @@
-import { useState } from 'react'
 import './styles/main.scss';
-import Carousel from './components/carousel/carousel'
 import { Link } from './components/Link/Link'
+import { Button } from './components/Button/Button';
+import { Icon } from './components/Icon/Icon';
+import {ICONS} from './constants/icons';
+import TextField from './components/Text-field/Text-field';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-  // const items: Item[] = [
-  //   {
-  //     title: 'Montañas',
-  //     imageSrc: 'https://i.imgur.com/hXGVbJM.jpg',
-  //     altText: 'Montañas',
-  //     caption: 'Las montañas son una de las maravillas naturales más impresionantes del mundo',
-  //   },
-  //   {
-  //     title: 'Cascadas',
-  //     imageSrc: 'https://i.imgur.com/Y4NyXWe.jpg',
-  //     altText: 'Cascadas',
-  //     caption: 'Las cascadas son impresionantes y pueden ser vistas en todo el mundo',
-  //   },
-  //   {
-  //     title: 'Playas',
-  //     imageSrc: 'https://i.imgur.com/THoI8fd.jpg',
-  //     altText: 'Playas',
-  //     caption: 'Las playas son un lugar perfecto para relajarse y disfrutar del sol',
-  //   },
-  // ];
+  const options: any = {
+    //enableHighAccuracy: false,
+    //timeout: 5000,
+    //maximumAge: 0
+  };
+  navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+  
+function successCallback(position: any) {
+	const { accuracy, latitude, longitude, altitude, heading, speed } = position.coords;
+    // Show a map centered at latitude / longitude.
+    console.log(position.coords);
+    
+}
+function errorCallback(error: any) {
+	
+}
+
 
   return (
     <div className="App">
+      {/* <form className="form">
+        <TextField id='input' label='Email' type='email' 
+          variant='standard' 
+          required={true} 
+          helperText='awdawda awdawd awdawd awd awdawawdaw awdawd'/>
+        <TextField id='input1' label='Password' type='password' 
+          variant='outline' 
+          required={true} 
+          helperText=''/>
+        <TextField id='input2' label='Edad' type='number' 
+          variant='standard' 
+          helperText='awdawda awdawd err'/>
+        <TextField id='input3' label='Direccion'  
+          variant='outline' 
+          disabled={true}
+          helperText=''/>
+      </form>
+      <Button mode='secondary' size='large'>
+        Paco
+        <Icon size={48}  icon={'cart_shopping'} color="black"></Icon>
+      </Button>
       <Link url='paco'>PEpo</Link>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-       <h1>Ejemplo de Carousel con datos reales</h1>
-      <Carousel />
+      <Icon size={48}  icon={ICONS.instagram} color="green"></Icon>
+      <h1>Ejemplo de Carousel con datos reales</h1>
+      <Carousel /> */}
     </div>
   )
 }
