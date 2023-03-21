@@ -43,7 +43,7 @@ function errorCallback(error: any) {
           variant='outline' 
           disabled={true}
           helperText=''/>
-      </form>
+      </form> */}
       <Button mode='secondary' size='large'>
         Paco
         <Icon size={48}  icon={'cart_shopping'} color="black"></Icon>
@@ -51,7 +51,7 @@ function errorCallback(error: any) {
       <Link url='paco'>PEpo</Link>
       <Icon size={48}  icon={ICONS.instagram} color="green"></Icon>
       <h1>Ejemplo de Carousel con datos reales</h1>
-      <Carousel /> */}
+      {/* <Carousel /> */}
     </div>
   )
 }
